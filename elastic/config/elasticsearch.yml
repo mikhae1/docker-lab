@@ -1,0 +1,9 @@
+cluster.name: "elastic-cluster"
+http.host: 0.0.0.0
+discovery.zen.minimum_master_nodes: 1
+xpack.security.enabled: 'false'
+xpack.monitoring.enabled: 'false'
+xpack.graph.enabled: 'false'
+xpack.watcher.enabled: 'false'
+http.cors.enabled: 'true'
+discovery.zen.minimum_master_nodes: 1

@@ -1,0 +1,17 @@
+version: "3"
+
+services:
+  search:
+    build: .
+    image: elasticsearch:5.3.1
+    container_name: search
+    expose:
+      - 9200
+      - 9300
+
+    volumes:
+      - search:/usr/share/elasticsearch/data
+
+volumes:
+  search:
+    external: true
